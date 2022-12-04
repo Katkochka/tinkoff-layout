@@ -16,6 +16,7 @@
   &:hover {
     background: var(--primary-hover);
     color: $color;
+    cursor: pointer
   }
 
   &:active {

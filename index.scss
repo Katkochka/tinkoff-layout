@@ -15,9 +15,10 @@
 @import './src/components/step.scss';
 @import './src/components/form.scss';
 @import './src/style/arrow.scss';
-@import './src/components/check.scss';
+@import './src/components/check/check.scss';
 @import './src/sections/footer/footer.scss';
 @import './src/sections/header/header.scss';
+@import './src/components/details.scss';
 
 body {
   font-family: 'Roboto', sans-serif;

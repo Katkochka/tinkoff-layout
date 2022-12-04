@@ -155,36 +155,80 @@
             </div>
             <div class="box__content">
               <div class="panel">
-                <div class="sections-list">
-                  <div class="sections-list__item">
+                <div class="sections-list" >
+                <details>
+                  <summary class="sections-list__item">
                     <span>Основы JavaScript</span>
                     <div class="arrow"></div>
-                  </div>
-                  <div class="sections-list__item">
+                  </summary>
+                    <ul class="list">
+                      <li>Изучим основы и тонкости языка</li>
+                      <li>Типы данных</li>
+                      <li>Области видимости и замыкания</li>
+                      <li>Прототипы и наследование</li>
+                      <li>Однопоточность и стек вызовов</li>
+                      <li>Асинхронные API: Promise, AJAX, async-await</li>
+                    </ul>              
+                </details> 
+                <details>
+                  <summary class="sections-list__item">
                     <span>Основы верстки: HTML и CSS</span>
                     <div class="arrow"></div>
-                  </div>
-                  <div class="sections-list__item">
+                  </summary>
+                    <ul class="list">
+                      <li>HTML. Структура документа. HTML-элементы, классификация.Специальные символы</li>
+                      <li>CSS. Селекторы. Специфичность. Сброс стилей. Блочная модель. Единицы размера и цвета</li>
+                    </ul>              
+                </details>
+                <details>
+                  <summary class="sections-list__item">
                     <span>Работа с веб-страницей и событиями</span>
                     <div class="arrow"></div>
-                  </div>
-                  <div class="sections-list__item">
+                  </summary>
+                    <ul class="list">
+                      <li>Объектная модель документа и манипуляция DOM-элементами</li>
+                      <li>Шаблонизация и пользовательские веб-компоненты</li>
+                      <li>События DOM</li>
+                    </ul>              
+                </details>
+                <details>
+                  <summary class="sections-list__item">
                     <span>Работа с фреймворками Angular и React</span>
                     <div class="arrow"></div>
-                  </div>
-                  <div class="sections-list__item">
-                    <span>Работа с фреймворками Angular и React</span>
-                    <div class="arrow"></div>
-                  </div>
-                  <div class="sections-list__item">
+                  </summary>
+                    <ul class="list">
+                      <li>Структура проекта, набор библиотек, система сборки, routing, lazy loading, dependency injection</li>
+                      <li>При изучении Angular поговорим также об RxJs</li>
+                    </ul>              
+                </details>
+                <details>
+                  <summary class="sections-list__item">
                     <span>Angular</span>
                     <div class="arrow"></div>
-                  </div>
-                  <div class="sections-list__item">
+                  </summary>
+                    <ul class="list">
+                      <li>TypeScript</li>
+                      <li>Компоненты</li>
+                      <li>Шаблонизация</li>
+                      <li>Реактивные формы</li>
+                      <li>DI и сервисы в архитектуре приложения. Иерархия инжекторов</li>
+                      <li>Firebase: БД, права доступа к БД, авторизация</li>
+                    </ul>              
+                </details>
+                <details>
+                  <summary class="sections-list__item">
                     <span>React</span>
                     <div class="arrow"></div>
-                  </div>
-                </div>
+                  </summary>
+                    <ul class="list">
+                      <li>Babel/TypeScript и JSX</li>
+                      <li>Компонентный подход</li>
+                      <li>Состояние и свойства компонентов</li>
+                      <li>Жизненный цикл компонентов</li>
+                      <li>Работа с формами</li>
+                      <li>Redux, react-router, styled-components и прочий необходимый минимум</li>
+                    </ul>              
+                </details>
               </div>
             </div>
           </section>
@@ -338,23 +382,25 @@
                 <h2 class="request-form__header">Подать заявку</h2>
         
                 <div class="request-form__input-box">
-                  <div class="request-form__input">
-                    Город
-                    <div class="arrow"></div>
+                <div>
+                  <div class="request-form__icon">
+                    <input class="request-form__input" placeholder="Город" readonly>
+                    <div class="request-form__aicon">
+                      <img src="./assets/icons/arrow.svg" alt="" />
+                    </div>
                   </div>
-        
-                  <div class="request-form__input">Фамилия и имя</div>
+                </div>
+                
+                  <input class="request-form__input" placeholder="Фамилия и имя">
                 </div>
         
                 <div class="request-form__submit-box">
                   <div class="request-form__agreement">
-                    <div class="check">
-                      <img src="./assets/icons/check.svg" alt="" />
-                    </div>
-                    <p>
-                      Я согласен с
-                      <a href="#!">условиями передачи информации</a>
-                    </p>
+                    <input type="checkbox" class="custom-checkbox" id="agree" >
+                    <label for="agree">
+                      Я согласен с 
+                      <a href="#!">&nbsp;условиями передачи информации</a>
+                    </label>
                   </div>
                   <button href="#!" class="button">Отправить</button>
                 </div>
@@ -368,7 +414,7 @@
         <div class="container">
           <div class="footer__box">
             <span>© 2022 «Тинькофф Образование»</span>
-            <span>По вопросам пишите на <a href="#!">edu@tinkoff.ru</a></span>
+            <span style="display:flex;"> По вопросам пишите на <address href="#!">&nbsp;edu@tinkoff.ru</address></span>
           </div>
         </div>
       </footer>
